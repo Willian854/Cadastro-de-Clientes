@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>Cadastro de Clientes</title>
+    <style>
+      body{
+        background-color: aquamarine;
+      }
+
+      h2{
+        text-align: center;
+        color: red;
+      }
+
+      p{
+        color: blue;
+        font-weight: bolder;
+      }
+
+      label{
+        font-weight: bolder;
+      }
+
+      div{
+        padding-bottom: 1%;
+        border: outset;
+        border-top: hidden;
+        border-left: hidden;
+        border-right: hidden;
+      }
+
+      a{
+        color: green;
+      }
+
+      .form{
+        width: 70%;
+        border: none;
+      }
+
+      td input{
+        width: 100%;
+      }
+    </style>
+    <body>
+      <h2>Cadastro de Clientes</h2>
+
+      <p>Preencha todos os campos abaixo com Letras Maíuscula e sem abreviações no final clique no botão Enviar, para enviar
+        as informações do formulário para nossa base de dados.</p>
+
+      <div>
+        <div class="form">
+          <table>
+            <tr>
+              <td><label for="nome">Nome:</label></td>
+              <td colspan="4"><input type="text" name="nome" id="nome"></td>
+            </tr>
+            <tr>
+              <td><label for="end">Endereço:</label></td>
+              <td colspan="4"><input type="text" name="end" id="end"></td>
+            </tr>
+            <tr>
+              <td><label for="cid">Cidade:</label></td>
+              <td><input type="text" name="cid" id="cid"></td>
+            </tr>
+            <tr>
+              <td><label for="pas">Senha:</label></td>
+              <td><input type="password" name="pas" id="pas"></td>
+              
+              <td style="width: 10%;"></td>
+
+              <td><label for="est">Estado:</label></td>
+              <td>
+                <select name="est" id="est">
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="MG">MG</option>
+                  <option value="MT">MT</option>
+                  <option value="ES">ES</option>
+                  <option value="PR">PR</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div>
+        <a>Escolha a(s) opções desejada(s)</a>
+        <br>
+
+        <input type="radio" name="fruta" id="lar"><b>Laranja</b>
+
+        <input type="radio" name="fruta" id="mor"><b>Morango</b>
+
+        <input type="radio" name="fruta" id="ban"><b>Banana</b>
+        
+        <input type="radio" name="fruta" id="mac"><b>Maça</b>
+
+        <input type="radio" name="fruta" id="per"><b>Pêra</b>
+      </div>
+
+      <br>
+
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      <br>
+
+      <input type="submit" value="ENVIAR">
+      <input type="reset" value="LIMPAR">
+    </body>
+<table>
+</html>
